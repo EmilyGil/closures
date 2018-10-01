@@ -1,0 +1,11 @@
+function makeFun(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+
+var add1 = makeFun(1);
+var add5 = makeFun(5);
+
+console.log(add1(5)); 
+console.log(add5(5)); 
